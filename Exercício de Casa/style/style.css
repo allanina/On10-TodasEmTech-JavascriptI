@@ -1,0 +1,66 @@
+*{
+  background-color: #5E17EB;
+}
+body{
+  font-family: 'Quicksand', sans-serif;
+  color: #FFFFFF;
+  align-items: center;
+}
+
+.cabecalho{
+  background-image: url(../img/book\ repository.png);
+  background-position: center;
+  background-size: auto;
+
+}
+
+
+/* decoração dos elementos input */
+.inputDeco{
+  width: 100%;
+  height: 30px;
+  background-color:#FFFFFF;
+  display: flex;
+  border-radius: 10px;
+  border-style: hidden;
+}
+
+/* decoração do botão de envio */
+.botaoEnviar{
+  background-color: #FFFFFF;
+  width: 90px;
+  border-radius: 10px;
+  border-style: hidden;
+  align-content: space-around;
+  
+}
+
+.corpoTabela {
+  background-color: #FFFFFF;
+  margin: 3%;
+
+
+}
+.celulasTabela{
+  background-color: #FFFFFF;
+  color: #5E17EB;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.botao-tabela{
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/lixeira.png);
+  border-style: none;
+  border-radius: 2px;
+  background-color: #5E17EB;
+}
