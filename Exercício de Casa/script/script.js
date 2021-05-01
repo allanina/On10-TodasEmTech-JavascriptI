@@ -8,21 +8,27 @@ function criarTabela(event) {
     let recebePaginas = document.getElementById('paginas').value;
     let horarioInsercao = new Date().toLocaleTimeString('pt-br');
     let dataInsercao = new Date().toLocaleDateString('pt-br');
-  
-    document.getElementById('dadosTabela').innerHTML += `
+
+    if (recebeTitulo === "" || recebeAutor ==="" || recebeIsbn === "" || recebeData === "" || recebePaginas === ""){
+      alert("Preencha todos os campos")
+    } else{
+
+      
+      document.getElementById('dadosTabela').innerHTML += `
       <tr id="tr-tabela">
-          <td>${recebeTitulo}</td>
-          <td>${recebeAutor}</td>
-          <td>${recebeIsbn}</td>
-          <td>${recebeData}</td>
-          <td>${recebePaginas}</td>
-          <td>${horarioInsercao} - ${dataInsercao}</td>
-          <td><button id='botao-tabela' class='botao-tabela' onclick="removerLivroTabela(event)" ></button></td>
+      <td>${recebeTitulo}</td>
+      <td>${recebeAutor}</td>
+      <td>${recebeIsbn}</td>
+      <td>${recebeData}</td>
+      <td>${recebePaginas}</td>
+      <td>${horarioInsercao} - ${dataInsercao}</td>
+      <td><button id='botao-tabela' class='botao-tabela' onclick="removerLivroTabela(event)" ></button></td>
       </tr>
-    
-    
-    `
-    
+      
+      
+      `
+      
+    }
 
 }
 function removerLivroTabela(event){
